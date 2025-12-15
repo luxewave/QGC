@@ -1,5 +1,5 @@
 # The 64-bit version of this action (arm64 only)
-name: QGroundcontrol Android 64-bit Release
+name: QGroundcontrol Android 64-bit Release Test
 
 on:
   push:
