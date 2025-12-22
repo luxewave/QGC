@@ -18,11 +18,10 @@ env:
   SOURCE_DIR:   ${{ github.workspace }}
   QT_VERSION:   5.15.2
   BUILD_TYPE:   ${{ fromJSON('["DailyBuild", "StableBuild"]')[ github.ref_type == 'tag' || contains(github.ref, 'Stable_' ) ] }}
-  CI_DESKTOP_BUILD: "1"
 
 jobs:
   build:
-    runs-on:  ubuntu-22.04
+    runs-on:  ubuntu-24.04
 
     steps:
       - name: Checkout repo
